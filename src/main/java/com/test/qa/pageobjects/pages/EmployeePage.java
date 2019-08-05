@@ -17,11 +17,11 @@ public class EmployeePage extends PageBase {
     private static By idValidMsg = By.xpath("//div[text()=\"Please input employeeId!\"]");
     private static By nameValidMsg = By.xpath("//div[text()=\"Please input employeeName!\"]");
 
-    private static By fnameValidMsg = By.xpath("Please input employeeFirstName!");
+    private static By fnameValidMsg = By.xpath("//div[text()=\"Please input employeeFirstName!\"]");
 
-    private static By designationValidMsg = By.xpath("Please select designation!");
+    private static By designationValidMsg = By.xpath("//div[text()=\"Please select designation!\"]");
 
-    private static By emailValidMsg = By.xpath("Please input employeeEmail!");
+    private static By emailValidMsg = By.xpath("//div[text()=\"Please input employeeEmail!\"]");
 
 
 
