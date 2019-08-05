@@ -3,7 +3,7 @@
 <suite name="REGRESSION" verbose="1" configfailurepolicy="continue">
     <test name="REGRESSION">
         <classes>
-<!--            <class name="com.test.qa.test.UiAutomationTrainingBasicTest"/>-->
+           <class name="com.test.qa.test.AddEmployee"></class>
 
         </classes>
     </test>

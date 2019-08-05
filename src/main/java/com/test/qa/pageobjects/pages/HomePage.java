@@ -14,22 +14,15 @@ public class HomePage extends PageBase {
 	private static final Logger LOGGER = Logger.getLogger(HomePage.class);
 
 	private static By hdrWelcome = By.xpath("//div[@class = 'logo']");
+    private static By companyManu = By.xpath("//span[text()=\"Company\"]");
 
 
-	private static String commonLinkString = "//a[@href='LINK']";
-	private static String commonLink = "//div[@class='THANU']";
 	public static boolean isHomePageDisplayed() {
 		staticWait(4);
 		return getDriver().findElement(hdrWelcome).isDisplayed();
 	}
-	public static void clickLink(String link) {
-		getDriver().findElement(By.xpath(commonLinkString.replace("LINK", link))).click();
-		LOGGER.info("Link " + link + " Clicked");
-		staticWait(3);
+	public static void clickCompanyMenu(){
+		getDriver().findElement(companyManu).click();
 	}
-	public static void clickLinks(String link1) {
-		getDriver().findElement(By.xpath(commonLink.replace("THANU", link1))).click();
-		LOGGER.info("Link " + link1 + " Clicked");
-		staticWait(3);
-	}
+
 }

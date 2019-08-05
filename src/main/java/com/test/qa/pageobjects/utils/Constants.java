@@ -24,4 +24,7 @@ public class Constants {
 	public static final String FILENAME_TXT = "SP.jpg";
 
 
+	public static final String ManageProject_LINK = "/project";
+
+
 }	
